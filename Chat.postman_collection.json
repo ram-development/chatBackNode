@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "767f8271-9f0f-48ff-afd1-138583c12ebd",
+		"name": "Chat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Rick\",\n\t\"email\":\"rick@yopmail.com\",\n\t\"password\":\"Test@123\",\n\t\"contact\":\"9897867867\",\n\t\"confirmPassword\":\"Test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/verifyUser/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRiYWEzYTIwMzc5NTEyOTA5M2Y5MjUiLCJleHAiOjE1OTE0NjE0NjYsImlhdCI6MTU5MTQ1NDI2Nn0.tK_hqBqf1uabKpVzgg8mLicTGwq9wKbvW22RSaFwLo0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"verifyUser",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRiYWEzYTIwMzc5NTEyOTA5M2Y5MjUiLCJleHAiOjE1OTE0NjE0NjYsImlhdCI6MTU5MTQ1NDI2Nn0.tK_hqBqf1uabKpVzgg8mLicTGwq9wKbvW22RSaFwLo0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resend Verify Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"rick@yopmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/resendVerify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"resendVerify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"rick@yopmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/forgotPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Forgot Password",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/verifyForgot/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRiYWEzYTIwMzc5NTEyOTA5M2Y5MjUiLCJleHAiOjE1OTE0NjE4NDMsImlhdCI6MTU5MTQ1NDY0M30.4WCECkQvRuLgF8_oAtO1xQa3DkPSla2-aYGcpNl3Ps4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"verifyForgot",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRiYWEzYTIwMzc5NTEyOTA5M2Y5MjUiLCJleHAiOjE1OTE0NjE4NDMsImlhdCI6MTU5MTQ1NDY0M30.4WCECkQvRuLgF8_oAtO1xQa3DkPSla2-aYGcpNl3Ps4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"password\":\"Test@123\",\"confirmPassword\":\"Test@123\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWRiYWEzYTIwMzc5NTEyOTA5M2Y5MjUiLCJleHAiOjE1OTE0NjE4NDMsImlhdCI6MTU5MTQ1NDY0M30.4WCECkQvRuLgF8_oAtO1xQa3DkPSla2-aYGcpNl3Ps4\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/user/resetPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"rick@yopmail.com\",\"password\":\"Test@123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

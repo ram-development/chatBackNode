@@ -1,0 +1,33 @@
+{
+  "name": "chatbackend",
+  "version": "1.0.0",
+  "description": "chat-backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ram-katchintech/chatBackNode.git"
+  },
+  "author": "ram krishan sharma",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/ram-katchintech/chatBackNode.git"
+  },
+  "homepage": "https://github.com/ram-katchintech/chatBackNode",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.2",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.14",
+    "nodemailer": "^6.4.2",
+    "socket.io": "^2.3.0"
+  }
+}
